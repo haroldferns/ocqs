@@ -1,0 +1,2 @@
+# ocqs
+Quickstart for ownCloud
