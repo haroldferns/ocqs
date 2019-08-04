@@ -231,4 +231,3 @@ also deserve thanks for their feedback.
   [html2text]:          http://www.aaronsw.com/2002/html2text/
  
   [tfmenu]: /graphics/markdown/mt_textformat_menu.png
-
