@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## ownCloud QuickStart for Administrators and Users
 
 You can use the [editor on GitHub](https://github.com/haroldferns/ocqs/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
