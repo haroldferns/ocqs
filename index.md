@@ -14,24 +14,23 @@ Installing ownCloud Server for non-technical users
 --------------------------------------------------
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
 
-1. **Download an appliance image** for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
+1. Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
 
-		*	Appliance for [VirtualBox]: [Ova image]
-		*	Appliance for [VMware]: [ESX image], [VMware image]
-		*	Appliance for [KVM]: [Kvm image]
+*	Appliance for [VirtualBox]: [Ova image]
+*	Appliance for [VMware]: [ESX image], [VMware image]
+*	Appliance for [KVM]: [Kvm image]
 
-			[VMware]: https://www.vmware.com/
-			[VirtualBox]: https://www.virtualbox.org/
-			[KVM]: https://www.linux-kvm.org/page/Main_Page
-			[Ova image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-virtualbox.ova
-			[ESX image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-ESX.ova
-			[Kvm image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
-			[VMware image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
+[VMware]: https://www.vmware.com/
+[VirtualBox]: https://www.virtualbox.org/
+[KVM]: https://www.linux-kvm.org/page/Main_Page
+[Ova image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-virtualbox.ova
+[ESX image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-ESX.ova
+[Kvm image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
+[VMware image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
 2.	Install the appliance on your virtualization platform. Refer to the platform documentation if needed.
 
-3.	Setup your ownCloud Server instance
-	Note: Keep a record of all the settings you provide in this section. You will need them later. 
+3.	Setup your ownCloud Server instance. Keep a record of all the settings you provide in this section. You will need them later. 
 
 	3.1 Select the appropriate Language, Locale, and keyboard settings.
 	
@@ -59,56 +58,55 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 --------------------------------------
 You know what you're doing and choose to roll-your-own for production environments using one of these three options: 
 
-1.	Download a [tarball] [tb] or [zipfile] [zp] and build. Refer to the [prerequisites] [pr] and [installation instructions] [ii] to proceed. 
+1.	Download a [tarball] or [zipfile] and build. Refer to the [prerequisites] and [installation instructions] [ii] to proceed. 
 
-2. Add repositories or [download packages directly] [dr] and install for your preferred flavor of Linux. Refer to the [prerequisites] [pr] and [installation instructions] [ii] to proceed.  
+2.	Add repositories or [download packages directly] [dr] and install for your preferred flavor of Linux. Refer to the [prerequisites] and [installation instructions] [ii] to proceed.  
 
-3. Get a [docker image] [dk] if you use Docker and install ownCloud Server using [these instructions] [dki]. 
+3.	Get a [docker image] [dk] if you use Docker and install ownCloud Server using [these instructions] [dki]. 
 
-[pr]: https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html
-[ii] :https://doc.owncloud.org/server/10.2/admin_manual/installation/manual_installation.html
+[tarball]: https://download.owncloud.org/community/owncloud-10.2.1.tar.bz2
+[zipfile]: https://download.owncloud.org/community/owncloud-10.2.1.zip
+[prerequisites]: https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html
+[ii]: https://doc.owncloud.org/server/10.2/admin_manual/installation/manual_installation.html
 [dr]: https://download.owncloud.org/download/repositories/production/owncloud/
-[tb]: https://download.owncloud.org/community/owncloud-10.2.1.tar.bz2
-[zp]: https://download.owncloud.org/community/owncloud-10.2.1.zip
 [dk]: https://hub.docker.com/r/owncloud/server/
 [dki]: https://doc.owncloud.org/server/latest/admin_manual/installation/docker/
 
-*Note:* By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
+Note: By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
 
 
 Configuring ownCloud Server
 ---------------------------
-1. Access the ownCloud admin interface at https://<server ip or FQDN>/ from your web browser. You may receive a invalid trust certificate warning. Ignore this warning and proceed. 
+1. Access the ownCloud admin interface at https://\<server ip or FQDN\>/ from your web browser. You may receive a invalid trust certificate warning. Ignore this warning and proceed
 
+2. Activation process: Supply the licence key you received at the email address that you provided during setup
 
-2. Activation process: Supply the licence key you received at the email address that you provided during setup.  
-
-3. Test that everything is working by navigating to https://<server ip>/owncloud and logging in with the Administrator credentials
+3. Test that everything is working by navigating to https://\<server ip\>/owncloud and logging in with the Administrator credentials
 
 Setting up user and groups
 --------------------------
-1. Log in using the username 'Administrator' and the password that you specified during setup earlier.
+1. Log in using the username 'Administrator' and the password that you specified during setup earlier
 
-2. Navigate to Administrator > Users from the top right corner of the Admin console.
+2. Navigate to Administrator > Users from the top right corner of the Admin console
 
-3. Create a new group by using the '+ Add Group' button at the top left corner of the Admin console.
+3. Create a new group by using the '+ Add Group' button at the top left corner of the Admin console
 
-4. Add users to the group by supplying a new username, email address, assigning a group and clicking 'Create'. You may set the quota and other details directly at a specific users record in the list.	
+4. Add users to the group by supplying a new username, email address, assigning a group and clicking 'Create'. You may set the quota and other details directly at a specific users record in the list.
 
 Downloading and installing a client
 -----------------------------------
 ownCloud has clients for multiple desktop platforms including Windows, MacOS, Linux, as well as Mobile platforms iOS and Android. Download your preferred client here:
 
-	Desktop
+1. Desktop Clients
 	
-	[Windows Client] [wc]
-	[MacOS Client] [mc]
-	[Linux Client] [lc]
+	*	[MacOS] [mc]
+	*	[Windows] [wc]
+	*	[Linux] [lc]
 	
-	Mobile
+2.	Mobile Clients
 	
-	[iOS Client] [ioc]
-	[Android Client] [ac]
+	*	[iOS Client] [ioc]
+	*	[Android Client] [ac]
 
 [wc]: https://download.owncloud.com/desktop/stable/ownCloud-2.5.4.11654.11466.msi
 [mc]: https://download.owncloud.com/desktop/stable/ownCloud-2.5.4.11456.pkg
@@ -121,14 +119,14 @@ Setting up and using your client with your ownCloud server instance
 ---------------------------------------------------------------------
 1. Launch your preferred client.
 
-2. At the server address prompt, enter https://<server ip or FQDN>/owncloud. 
+2. At the server address prompt, enter https://\<server ip or FQDN\>/owncloud. 
 
 3. You see a warning for an untrusted certificate. Select the option 'Trust this certificate anyway' and proceed.
 
 4. Supply your username and password and log in.
 
 5. Next, customize your server synchronization options and your local folder.
-You see a message "Connected to <server address> as <username>. This indicates a successful connection.
+You see a message "Connected to \<server address\> as \<username\>. This indicates a successful connection.
 
 
 
