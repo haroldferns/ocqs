@@ -16,7 +16,7 @@ Installing ownCloud Server for non-technical users
 --------------------------------------------------
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
 
-STEP 1: Download an appliance image for your virtualization platform. If you don't know which one to use, install VirtualBox [vb] and then download the appliance.
+1: Download an appliance image for your virtualization platform. If you don't know which one to use, install VirtualBox [vb] and then download the appliance.
 
 	Appliance for VirtualBox [vb]: Ova image [oi]
 	Appliance for VMware [vm]: ESX image [ei], VMware image [vi]
@@ -31,14 +31,51 @@ STEP 1: Download an appliance image for your virtualization platform. If you don
 [vi]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
 	
-STEP 2: Install and run the appliance on your virtualization platform.
+2: Install the appliance on your virtualization platform. Refer to the documentation for your platform if you need help with this.
 
+Proceed to configure ownCloud Server.
 
 
 Installing ownCloud Server for experts
 --------------------------------------
+If you know what you're doing and choose to roll-your-own for production environments: 
+
+OPTION 1: Download a tarball [tb] or zipfile [zp] and build. Refer to the prerequisites [pr] and installation instructions [ii] to proceed. 
+
+OPTION 2: Add repositories or download packages directly [dr] and install for your preferred flavor of Linux. Refer to the prerequisites [pr] and installation instructions [ii] to proceed.  
+
+OPTION 3: Get a docker image [dk] if you use Docker and install ownCloud Server using these instructions [dki]. 
+
+[pr]: https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html
+[ii] :https://doc.owncloud.org/server/10.2/admin_manual/installation/manual_installation.html
+[dr]: https://download.owncloud.org/download/repositories/production/owncloud/
+[tb]: https://download.owncloud.org/community/owncloud-10.2.1.tar.bz2
+[zp]: https://download.owncloud.org/community/owncloud-10.2.1.zip
+[dk]: https://hub.docker.com/r/owncloud/server/
+[dki]: https://doc.owncloud.org/server/latest/admin_manual/installation/docker/
+
+Note: By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. Options 1 and 2 run on port 80 by default. We recommend enabling SSL on your webserver to ensure secure connections between server and client.
 
 
+Configuring ownCloud Server
+---------------------------
+
+
+
+Setting up user and groups
+--------------------------
+
+
+Downloading and installing a client
+-----------------------------------
+
+
+Setting up and testing your client with your ownCloud server instance
+---------------------------------------------------------------------
+
+
+Setting up ownCloud server to run on a non-standard port (e.g. 8080)
+--------------------------------------------------------------------
 
 
 
