@@ -130,26 +130,26 @@ The message "**Connected to \<server address\> as \<username\>**" indicates a su
 
 There are multiple ways to run ownCloud to accept requests on port 8080.
 
-**Option 1: Modify apache webserver**: Configure apache to listen on port 80
+1. **Option 1: Modify apache webserver**: Configure apache to listen on port 80
 
-As root, edit /etc/apache2/ports.conf and change 80 to 8080 as follows
-```
-Listen 8080
-```
-Then edit /etc/apache2/sites-enabled/000-default.conf and change the line with 80 to 8080 as follows
-```
-<VirtualHost *: 8080>
-```
-Next, restart the apache service as follows:
-```
-sudo service apache2 restart
-```
-Apache should now listen on port 8080. To access owncloud, now use **http://\<server ip:8080\>/owncloud**. You may need to open port 8080 on your firewall as well before this works. 
+	As root, edit /etc/apache2/ports.conf and change 80 to 8080 as follows
+	```
+	Listen 8080
+	```
+	Then edit /etc/apache2/sites-enabled/000-default.conf and change the line with 80 to 8080 as follows
+	```
+	<VirtualHost *: 8080>
+	```
+	Next, restart the apache service as follows:
+	```
+	sudo service apache2 restart
+	```
+	Apache should now listen on port 8080. To access owncloud, now use **http://\<server ip:8080\>/owncloud**. You may need to open port 8080 on your firewall as well before this works. 
 
-**Option 2: Modify your server firewall** like [iptables] to locally forward port 80 to port 8080
+2. **Option 2: Modify your server firewall** like [iptables] to locally forward port 80 to port 8080
 
 [iptables]: https://www.netfilter.org/projects/iptables/index.html
 
-**Option 3: Setup a reverse proxy** using a lightweight webserver like [Nginx]
+3. **Option 3: Setup a reverse proxy** using a lightweight webserver like [Nginx]
 
 [Nginx]: https://nginx.org/
