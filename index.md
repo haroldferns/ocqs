@@ -144,7 +144,7 @@ Next, restart the apache service as follows:
 ```
 sudo service apache2 restart
 ```
-Apache should now listen on port 8080. To access owncloud, now use **http://\<server ip:8080\>/owncloud**. You may need to open port 8080 on your firewall as well before this works. 
+Apache should now listen on port 8080. To access ownCloud, now use **http://\<server ip:8080\>/owncloud**. You may need to open port 8080 on your firewall as well before this works. 
 
 ### Option 2: Modify your server firewall like [iptables] to locally forward port 80 to port 8080
 
