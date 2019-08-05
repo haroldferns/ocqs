@@ -26,20 +26,18 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 [Kvm image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
 [VMware image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
-1.	Install the appliance on your virtualization platform. Refer to the platform documentation if needed.
+1.	**Install the appliance** on your virtualization platform. Refer to the platform documentation if needed.
 
-2.	Setup your ownCloud Server instance. Keep a record of all the settings you provide in this section. You will need them later. 
+2.	**Setup your ownCloud Server instance**. Keep a record of all the settings you provide in this section. You will need them later. 
 
 	2.1	Select the appropriate Language, Locale, and keyboard settings.
 	
 	2.2	Domain and Network configuration:
-	
 	* Select the "Obtain IP address automatically (DHCP)" option.
 	* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
 	* If use a proxy server, provide your proxy server details.
 
 	2.3 Domain setup:
-	
 	* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
 	* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
