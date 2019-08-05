@@ -13,9 +13,10 @@ ownCloud is available in three editions:[Online], [Enterprise], and Community. T
 ## Installing ownCloud Server for non-technical users
 
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
-	*	Appliance for [VirtualBox]: [Ova image]
-	*	Appliance for [VMware]: [ESX image], [VMware image]
-	*	Appliance for [KVM]: [Kvm image]
+
+* Appliance for [VirtualBox]: [Ova image]
+* Appliance for [VMware]: [ESX image], [VMware image]
+* Appliance for [KVM]: [Kvm image]
 
 [VMware]: https://www.vmware.com/
 [VirtualBox]: https://www.virtualbox.org/
@@ -114,14 +115,14 @@ ownCloud has clients for multiple desktop platforms including Windows, MacOS, Li
 
 1. Launch your preferred client.
 
-2. At the server address prompt, enter *https://\<server ip or FQDN\>/owncloud*. 
+2. At the server address prompt, enter https://\<server ip or FQDN\>/owncloud. 
 
 3. You see a warning for an untrusted certificate. Select the option 'Trust this certificate anyway' and proceed.
 
 4. Supply your username and password and log in.
 
 5. Next, customize your server synchronization options and your local folder.
-You see a message "*Connected to \<server address\> as \<username\>*". This indicates a successful connection.
+You see a message "Connected to \<server address\> as \<username\>". This indicates a successful connection.
 
 
 
