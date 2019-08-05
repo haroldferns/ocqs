@@ -13,9 +13,9 @@ ownCloud is available in three editions:[Online], [Enterprise], and Community. T
 ## Installing ownCloud Server for non-technical users
 
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
-	+	Appliance for [VirtualBox]: [Ova image]
-	+	Appliance for [VMware]: [ESX image], [VMware image]
-	+	Appliance for [KVM]: [Kvm image]
+	*	Appliance for [VirtualBox]: [Ova image]
+	*	Appliance for [VMware]: [ESX image], [VMware image]
+	*	Appliance for [KVM]: [Kvm image]
 
 [VMware]: https://www.vmware.com/
 [VirtualBox]: https://www.virtualbox.org/
@@ -32,13 +32,13 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 	2.1 Select the appropriate Language, Locale, and keyboard settings.
 	
 	2.2 Domain and Network configuration:
-		+ Select the "Obtain IP address automatically (DHCP)" option.
-		+ Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
-		+ If use a proxy server, provide your proxy server details.
+		* Select the "Obtain IP address automatically (DHCP)" option.
+		* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
+		* If use a proxy server, provide your proxy server details.
 
 	2.3 Domain setup:
-		+ Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
-		+ If you are part of a UCS or Active Directory domain, select your preferred option.
+		* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
+		* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
 	2.4 Account information:
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
@@ -95,13 +95,13 @@ Note: By default, the Docker ownCloud instance listens on port 8080 and allows H
 ownCloud has clients for multiple desktop platforms including Windows, MacOS, Linux, as well as Mobile platforms iOS and Android. Download your preferred client here:
 
 1. Desktop Clients
-	+	[MacOS Client] [mc]
-	+	[Windows Client] [wc]
-	+	[Linux Client] [lc]
+	*	[MacOS Client] [mc]
+	*	[Windows Client] [wc]
+	*	[Linux Client] [lc]
 	
 2.	Mobile Clients
-	+	[iOS Client] [ioc]
-	+	[Android Client] [ac]
+	*	[iOS Client] [ioc]
+	*	[Android Client] [ac]
 
 [wc]: https://download.owncloud.com/desktop/stable/ownCloud-2.5.4.11654.11466.msi
 [mc]: https://download.owncloud.com/desktop/stable/ownCloud-2.5.4.11456.pkg
