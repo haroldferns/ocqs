@@ -1,6 +1,7 @@
 # QuickStart with ownCloud
-
+--------------------------
 ## Introduction
+---------------
 
 ownCloud is a leading open source file-sharing and cloud collaboration platform offering real security and privacy for your data. With desktop clients for MacOS, Windows, and Linux, and mobile clients for iOS and Android, store and access your files securely from anywhere!
 
@@ -10,15 +11,14 @@ ownCloud is available in three editions:[Online], [Enterprise], and Community. T
 [Enterprise]: https://owncloud.com/product-enterprise/
 
 
-Installing ownCloud Server for non-technical users
---------------------------------------------------
+## Installing ownCloud Server for non-technical users
+-----------------------------------------------------
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
 
-1. Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
-
-*	Appliance for [VirtualBox]: [Ova image]
-*	Appliance for [VMware]: [ESX image], [VMware image]
-*	Appliance for [KVM]: [Kvm image]
+- Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
+	-Appliance for [VirtualBox]: [Ova image]
+	-Appliance for [VMware]: [ESX image], [VMware image]
+	-Appliance for [KVM]: [Kvm image]
 
 [VMware]: https://www.vmware.com/
 [VirtualBox]: https://www.virtualbox.org/
@@ -55,7 +55,7 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 
 
 ## Installing ownCloud Server for experts
---------------------------------------
+-----------------------------------------
 You know what you're doing and choose to roll-your-own for production environments using one of these three options: 
 
 1.	Download a [tarball] or [zipfile] and build. Refer to the [prerequisites] and [installation instructions] [ii] to proceed. 
@@ -79,7 +79,7 @@ Configuring ownCloud Server
 ---------------------------
 1. Access the ownCloud admin interface at https://\<server ip or FQDN\>/ from your web browser. You may receive a invalid trust certificate warning. Ignore this warning and proceed
 
-2. Activation process: Supply the licence key you received at the email address that you provided during setup
+2. During activation, you will be asked to provide a licence key. Supply the licence key you received at the email address that you provided during setup
 
 3. Test that everything is working by navigating to https://\<server ip\>/owncloud and logging in with the Administrator credentials
 
@@ -98,13 +98,11 @@ Downloading and installing a client
 ownCloud has clients for multiple desktop platforms including Windows, MacOS, Linux, as well as Mobile platforms iOS and Android. Download your preferred client here:
 
 1. Desktop Clients
-	
 	*	[MacOS] [mc]
 	*	[Windows] [wc]
 	*	[Linux] [lc]
 	
 2.	Mobile Clients
-	
 	*	[iOS Client] [ioc]
 	*	[Android Client] [ac]
 
