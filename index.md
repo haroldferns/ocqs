@@ -45,7 +45,7 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
 		
 	2.5 **Host settings**:
-		Provide a Fully Qualified Domain Name (FQDN), if you can set one up else, use the  default values provided. 
+		Provide a Fully Qualified Domain Name (FQDN), if you can set one up, or else use the  default values provided. 
 		
 	2.6 **Confirm configuration settings**: review everything and proceed.
 	
@@ -83,11 +83,11 @@ You know what you're doing and choose to roll-your-own for production environmen
 
 ## Setting up users and groups
 
-1. Log in using the username 'Administrator' and the password that you specified during setup earlier
+1. Log in using the username 'Administrator' and the password that you specified during setup earlier.
 
-2. Navigate to Administrator > Users from the top right corner of the Admin console
+2. Navigate to Administrator > Users from the top right corner of the Admin console.
 
-3. Create a new group by using the '+ Add Group' button at the top left corner of the Admin console
+3. Create a new group by using the '+ Add Group' button at the top left corner of the Admin console.
 
 4. Add users to the group by supplying a new username, email address, assigning a group and clicking 'Create'. You may set the quota and other details directly at a specific user's record in the list.
 
@@ -113,19 +113,45 @@ ownCloud has clients for multiple desktop platforms including Windows, MacOS, Li
 	
 ## Setting up and using your client
 
-1. Launch your preferred client
+1. Launch your preferred client..
 
-2. At the server address prompt, enter https://\<server ip or FQDN\>/owncloud 
+2. At the server address prompt, enter https://\<server ip or FQDN\>/owncloud .
 
 3. You see a warning for an untrusted certificate. Select the option **"Trust this certificate anyway"** and proceed.
 
 4. Supply your username and password and log in.
 
 5. Next, customize your server synchronization options and your local folder.
-The message "Connected to \<server address\> as \<username\>" indicates a successful connection.
+The message "**Connected to \<server address\> as \<username\>**" indicates a successful connection.
 
 
 
 ## Setting up ownCloud server to run on a non-standard port (e.g. 8080)
+
+There are multiple ways to run ownCloud to accept requests on port 8080.
+
+**Option 1: Modify apache webserver**: Configure apache to listen on port 80
+
+As root, edit /etc/apache2/ports.conf and change 80 to 8080 as follows
+```
+Listen 8080
+```
+Then edit /etc/apache2/sites-enabled/000-default.conf and change the line with 80 to 8080 as follows
+```
+<VirtualHost *: 8080>
+```
+Next, restart the apache service as follows:
+```
+sudo service apache2 restart
+```
+Apache should now listen on port 8080. To access owncloud, now use http://\<server ip:8080\>/owncloud
+
+**Option 2: Modify a firewall like [iptables] to locally forward port 80 to port 8080
+
+[iptables]: https://www.netfilter.org/projects/iptables/index.html
+
+**Option 3: Setup a reverse proxy using a lightweight webserver like [Nginx]
+
+[Nginx]: https://nginx.org/	
 
 
