@@ -33,13 +33,13 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 	2.1	**Select the appropriate Language**, Locale, and keyboard settings.
 	
 	2.2	**Domain and Network configuration**:
-* Select the **"Obtain IP address automatically (DHCP)"** option.
-* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
-* If you use a proxy server, provide your proxy server details.
+	* Select the **"Obtain IP address automatically (DHCP)"** option.
+	* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
+	* If you use a proxy server, provide your proxy server details.
 
 	2.3 **Domain setup**:
-* Choose **"Manage users and permissions directly on this system"** if you're not part of any domain or you don't know which option to choose.
-* If you are part of a UCS or Active Directory domain, select your preferred option.
+	* Choose **"Manage users and permissions directly on this system"** if you're not part of any domain or you don't know which option to choose.
+	* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
 	2.4 **Account information**:
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
