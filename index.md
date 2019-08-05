@@ -9,6 +9,7 @@ ownCloud is available in three editions:[Online], [Enterprise], and Community. T
 [Online]: https://owncloud.online/
 [Enterprise]: https://owncloud.com/product-enterprise/
 
+
 Installing ownCloud Server for non-technical users
 --------------------------------------------------
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
@@ -19,38 +20,37 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 		*	Appliance for [VMware]: [ESX image], [VMware image]
 		*	Appliance for [KVM]: [Kvm image]
 
-[VMware]: https://www.vmware.com/
-[VirtualBox]: https://www.virtualbox.org/
-[KVM]: https://www.linux-kvm.org/page/Main_Page
-[Ova image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-virtualbox.ova
-[ESX image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-ESX.ova
-[Kvm image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
-[VMware image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
+			[VMware]: https://www.vmware.com/
+			[VirtualBox]: https://www.virtualbox.org/
+			[KVM]: https://www.linux-kvm.org/page/Main_Page
+			[Ova image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-virtualbox.ova
+			[ESX image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-ESX.ova
+			[Kvm image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
+			[VMware image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
-2.	**Install the appliance** on your virtualization platform. 
-	Refer to the platform documentation if needed.
+2.	Install the appliance on your virtualization platform. Refer to the platform documentation if needed.
 
-3.	*Setup your ownCloud Server* instance
-	*Note:* Keep a record of all the settings you provide in this section. You will need them later. 
+3.	Setup your ownCloud Server instance
+	Note: Keep a record of all the settings you provide in this section. You will need them later. 
 
-	3.1 *Select the appropriate Language*, Locale, and keyboard settings.
+	3.1 Select the appropriate Language, Locale, and keyboard settings.
 	
-	3.2 *Domain and Network configuration:*
+	3.2 Domain and Network configuration:
 		* Select the "Obtain IP address automatically (DHCP)" option.
 		* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
 		* If use a proxy server, provide your proxy server details.
 
-	3.3 *Domain setup:*
+	3.3 Domain setup:
 		* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
 		* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
-	3.4 *Account information:*
+	3.4 Account information:
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
 		
-	3.5 *Host settings:*
+	3.5 Host settings:
 		Provide a Fully Qualified Domain Name (FQDN), if you can set one up else, use the  default values provided. 
 		
-	3.6 *Confirm configuration settings:* review everything and proceed.
+	3.6 Confirm configuration settings: review everything and proceed.
 	
 	3.7 Once the installation is complete and the server has rebooted, proceed to configure ownCloud Server.
 
