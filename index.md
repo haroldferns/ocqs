@@ -4,7 +4,7 @@
 
 ownCloud is a leading open source file-sharing and cloud collaboration platform offering real security and privacy for your data. With desktop clients for MacOS, Windows, and Linux, and mobile clients for iOS and Android, store and access your files securely from anywhere!
 
-ownCloud is available in three editions:*[Online], [Enterprise], and Community*. This QuickStart guide provides instructions to install and configure the ownCloud Community Edition Server and clients quickly and easily. The clients support all three editions.
+ownCloud is available in three editions:[Online], [Enterprise], and Community. This QuickStart guide provides instructions to install and configure the ownCloud Community Edition Server and clients quickly and easily. The clients support all three editions.
 
 [Online]: https://owncloud.online/
 [Enterprise]: https://owncloud.com/product-enterprise/
@@ -13,11 +13,11 @@ Installing ownCloud Server for non-technical users
 --------------------------------------------------
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
 
-1. *Download an appliance image* for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
+1. **Download an appliance image** for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
 
-	*	Appliance for [VirtualBox]: [Ova image]
-	*	Appliance for [VMware]: [ESX image], [VMware image]
-	*	Appliance for [KVM]: [Kvm image]
+		*	Appliance for [VirtualBox]: [Ova image]
+		*	Appliance for [VMware]: [ESX image], [VMware image]
+		*	Appliance for [KVM]: [Kvm image]
 
 [VMware]: https://www.vmware.com/
 [VirtualBox]: https://www.virtualbox.org/
@@ -27,7 +27,7 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 [Kvm image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
 [VMware image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
-2.	*Install the appliance* on your virtualization platform. 
+2.	**Install the appliance** on your virtualization platform. 
 	Refer to the platform documentation if needed.
 
 3.	*Setup your ownCloud Server* instance
