@@ -30,16 +30,18 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 
 2.	Setup your ownCloud Server instance. Keep a record of all the settings you provide in this section. You will need them later. 
 
-	2.1 Select the appropriate Language, Locale, and keyboard settings.
+	2.1	Select the appropriate Language, Locale, and keyboard settings.
 	
-	2.2 Domain and Network configuration:
-		* Select the "Obtain IP address automatically (DHCP)" option.
-		* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
-		* If use a proxy server, provide your proxy server details.
+	2.2	Domain and Network configuration:
+	
+	* Select the "Obtain IP address automatically (DHCP)" option.
+	* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
+	* If use a proxy server, provide your proxy server details.
 
 	2.3 Domain setup:
-		* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
-		* If you are part of a UCS or Active Directory domain, select your preferred option.
+	
+	* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
+	* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
 	2.4 Account information:
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
@@ -70,7 +72,7 @@ You know what you're doing and choose to roll-your-own for production environmen
 [dk]: https://hub.docker.com/r/owncloud/server/
 [dki]: https://doc.owncloud.org/server/latest/admin_manual/installation/docker/
 
-Note: By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
+**Note**: By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
 
 
 ## Configuring ownCloud Server
