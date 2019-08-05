@@ -1,13 +1,10 @@
+# QuickStart with ownCloud
 
-QuickStart with ownCloud
-========================
-
-Introduction
-------------
+## Introduction
 
 ownCloud is a leading open source file-sharing and cloud collaboration platform offering real security and privacy for your data. With desktop clients for MacOS, Windows, and Linux, and mobile clients for iOS and Android, store and access your files securely from anywhere!
 
-ownCloud is available in three editions: **[Online], [Enterprise], and Community**. This QuickStart guide provides instructions to install and configure the ownCloud Community Edition Server and clients quickly and easily. The clients support all three editions.
+ownCloud is available in three editions:*[Online], [Enterprise], and Community*. This QuickStart guide provides instructions to install and configure the ownCloud Community Edition Server and clients quickly and easily. The clients support all three editions.
 
 [Online]: https://owncloud.online/
 [Enterprise]: https://owncloud.com/product-enterprise/
@@ -16,7 +13,7 @@ Installing ownCloud Server for non-technical users
 --------------------------------------------------
 The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
 
-1. Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
+1. *Download an appliance image* for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
 
 	*	Appliance for [VirtualBox]: [Ova image]
 	*	Appliance for [VMware]: [ESX image], [VMware image]
@@ -30,44 +27,43 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 [Kvm image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
 [VMware image]:  https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
+2.	*Install the appliance* on your virtualization platform. 
+	Refer to the platform documentation if needed.
+
+3.	*Setup your ownCloud Server* instance
+	*Note:* Keep a record of all the settings you provide in this section. You will need them later. 
+
+	3.1 *Select the appropriate Language*, Locale, and keyboard settings.
 	
-2.	Install the appliance on your virtualization platform. Refer to the documentation for your platform if you need help with this.
+	3.2 *Domain and Network configuration:*
+		* Select the "Obtain IP address automatically (DHCP)" option.
+		* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
+		* If use a proxy server, provide your proxy server details.
 
-
-3.	Setup your ownCloud Server instance
-	Note: Keep a record of all the settings you provide in this section. You will need them later. 
-
-	1. Select the appropriate Language, Locale, and keyboard settings.
-	
-	2. For Domain and Network configuration:
-		Select the "Obtain IP address automatically (DHCP)" option.
-		Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
-		If use a proxy server, provide your proxy server details.
-
-	3. For Domain setup:
-		Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
-		If you are part of a UCS or Active Directory domain, select your preferred option.
+	3.3 *Domain setup:*
+		* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
+		* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
-	4. For Account information:
+	3.4 *Account information:*
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
 		
-	5. Host settings:
+	3.5 *Host settings:*
 		Provide a Fully Qualified Domain Name (FQDN), if you can set one up else, use the  default values provided. 
 		
-	6. Confirm configuration settings: review everything and proceed.
+	3.6 *Confirm configuration settings:* review everything and proceed.
 	
-	7. Wait till the install is complete and the server has rebooted. Proceed to configure ownCloud Server.
+	3.7 Once the installation is complete and the server has rebooted, proceed to configure ownCloud Server.
 
 
-Installing ownCloud Server for experts
+## Installing ownCloud Server for experts
 --------------------------------------
-If you know what you're doing and choose to roll-your-own for production environments: 
+You know what you're doing and choose to roll-your-own for production environments using one of these three options: 
 
-OPTION 1: Download a [tarball] [tb] or [zipfile] [zp] and build. Refer to the [prerequisites] [pr] and [installation instructions] [ii] to proceed. 
+1.	Download a [tarball] [tb] or [zipfile] [zp] and build. Refer to the [prerequisites] [pr] and [installation instructions] [ii] to proceed. 
 
-OPTION 2: Add repositories or [download packages directly] [dr] and install for your preferred flavor of Linux. Refer to the [prerequisites] [pr] and [installation instructions] [ii] to proceed.  
+2. Add repositories or [download packages directly] [dr] and install for your preferred flavor of Linux. Refer to the [prerequisites] [pr] and [installation instructions] [ii] to proceed.  
 
-OPTION 3: Get a [docker image] [dk] if you use Docker and install ownCloud Server using [these instructions] [dki]. 
+3. Get a [docker image] [dk] if you use Docker and install ownCloud Server using [these instructions] [dki]. 
 
 [pr]: https://doc.owncloud.org/server/10.2/admin_manual/installation/system_requirements.html
 [ii] :https://doc.owncloud.org/server/10.2/admin_manual/installation/manual_installation.html
@@ -77,7 +73,7 @@ OPTION 3: Get a [docker image] [dk] if you use Docker and install ownCloud Serve
 [dk]: https://hub.docker.com/r/owncloud/server/
 [dki]: https://doc.owncloud.org/server/latest/admin_manual/installation/docker/
 
-Note: By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
+*Note:* By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
 
 
 Configuring ownCloud Server
