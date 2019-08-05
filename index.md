@@ -12,9 +12,7 @@ ownCloud is available in three editions:[Online], [Enterprise], and Community. T
 
 ## Installing ownCloud Server for non-technical users
 
-The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.
-
-1.	Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
+The ownCloud Server appliance is the easiest and quickest way to get started with ownCloud. It is setup and configured to run securely out-of-the-box.Download an appliance image for your virtualization platform. If you don't know which one to use, install [VirtualBox] and then download the appliance.
 	*	Appliance for [VirtualBox]: [Ova image]
 	*	Appliance for [VMware]: [ESX image], [VMware image]
 	*	Appliance for [KVM]: [Kvm image]
@@ -27,30 +25,30 @@ The ownCloud Server appliance is the easiest and quickest way to get started wit
 [Kvm image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-KVM.qcow2
 [VMware image]: https://appcenter.software-univention.de/univention-apps/current/owncloud/Univention-App-owncloud-vmware.zip
 
-2.	Install the appliance on your virtualization platform. Refer to the platform documentation if needed.
+1.	Install the appliance on your virtualization platform. Refer to the platform documentation if needed.
 
-3.	Setup your ownCloud Server instance. Keep a record of all the settings you provide in this section. You will need them later. 
+2.	Setup your ownCloud Server instance. Keep a record of all the settings you provide in this section. You will need them later. 
 
-	3.1 Select the appropriate Language, Locale, and keyboard settings.
+	2.1 Select the appropriate Language, Locale, and keyboard settings.
 	
-	3.2 Domain and Network configuration:
+	2.2 Domain and Network configuration:
 		* Select the "Obtain IP address automatically (DHCP)" option.
 		* Use 8.8.8.8 and 8.8.4.4 for preferred and alternate DNS server, if needed.
 		* If use a proxy server, provide your proxy server details.
 
-	3.3 Domain setup:
+	2.3 Domain setup:
 		* Choose "Manage users and permissions directly on this system" if you're not part of any domain or you don't know which option to choose.
 		* If you are part of a UCS or Active Directory domain, select your preferred option.
 		
-	3.4 Account information:
+	2.4 Account information:
 		Provide your organization name, a real email address, and a strong password. This email address will be used to email you a license key file that will be needed for authorization.
 		
-	3.5 Host settings:
+	2.5 Host settings:
 		Provide a Fully Qualified Domain Name (FQDN), if you can set one up else, use the  default values provided. 
 		
-	3.6 Confirm configuration settings: review everything and proceed.
+	2.6 Confirm configuration settings: review everything and proceed.
 	
-	3.7 Once the installation is complete and the server has rebooted, proceed to configure ownCloud Server.
+	2.7 Once the installation is complete and the server has rebooted, proceed to configure ownCloud Server.
 
 
 ## Installing ownCloud Server for experts
@@ -74,7 +72,7 @@ You know what you're doing and choose to roll-your-own for production environmen
 Note: By default, the Docker ownCloud instance listens on port 8080 and allows HTTP (non SSL) connections. With options 1 and 2, the webserver listens on port 80 by default. For all three options, enable SSL on your webserver to ensure secure connections between server and client.
 
 
-Configuring ownCloud Server
+## Configuring ownCloud Server
 
 1. Access the ownCloud admin interface at https://\<server ip or FQDN\>/ from your web browser. You may receive a invalid trust certificate warning. Ignore this warning and proceed
 
@@ -92,7 +90,7 @@ Setting up user and groups
 
 4. Add users to the group by supplying a new username, email address, assigning a group and clicking 'Create'. You may set the quota and other details directly at a specific users record in the list.
 
-Downloading and installing a client
+## Downloading and installing a client
 
 ownCloud has clients for multiple desktop platforms including Windows, MacOS, Linux, as well as Mobile platforms iOS and Android. Download your preferred client here:
 
@@ -112,7 +110,7 @@ ownCloud has clients for multiple desktop platforms including Windows, MacOS, Li
 [ac]: https://play.google.com/store/apps/details?id=com.owncloud.android
 
 	
-Setting up and using your client with your ownCloud server instance
+## Setting up and using your client with your ownCloud server instance
 
 1. Launch your preferred client.
 
@@ -127,7 +125,7 @@ You see a message "Connected to \<server address\> as \<username\>. This indicat
 
 
 
-Setting up ownCloud server to run on a non-standard port (e.g. 8080)
+## Setting up ownCloud server to run on a non-standard port (e.g. 8080)
 
 
 
